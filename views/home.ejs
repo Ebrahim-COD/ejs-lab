@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Green Byte Bistro</title>
+</head>
+<body>
+  <%- include('./partials/nav') %>
+  
+  <h1>Resturant Details</h1>
+  <p>Name: <%= RESTAURANT.name%> <br> Address: <%= RESTAURANT.address%> <br>  Phone: <%= RESTAURANT.phone%></p>
+
+  <% if(RESTAURANT.isOpen){ %>
+    <p>Yes we are open!</p>
+  <%} else { %>
+    <p>Sorry, we are closed!</p>
+  <%}%>
+
+  <!-- <p>The Restaurant is <%= RESTAURANT.isOpen === true ? `Open` : `Closed`%>.</p> -->
+
+
+
+
+</body>
+</html>
